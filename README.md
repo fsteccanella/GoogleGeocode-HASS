@@ -1,4 +1,4 @@
-# Google Geocode
+# Google Geocode (credits to https://github.com/michaelmcarthur/GoogleGeocode-HASS)
 
 This component has been created to be used with Home Assistant.
 
