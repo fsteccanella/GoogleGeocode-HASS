@@ -2,7 +2,7 @@
 Support for Google Geocode sensors.
 
 For more details about this platform, please refer to the documentation at
-https://github.com/michaelmcarthur/GoogleGeocode-HASS
+https://github.com/fsteccanella/GoogleGeocode-HASS
 """
 from datetime import datetime
 from datetime import timedelta 
@@ -148,7 +148,6 @@ class GoogleGeocode(Entity):
     @Throttle(SCAN_INTERVAL)
     def update(self):
         """Get the latest data and updates the states."""
-        entity_zone = self._get_zone_from_entity()
         entity_latlong = self._get_location_from_entity()
 
         _LOGGER.debug("Entity: "+str(self._origin_entity_id))
