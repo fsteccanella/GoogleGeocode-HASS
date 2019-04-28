@@ -21,7 +21,7 @@ from homeassistant.util import Throttle
 from homeassistant.helpers.entity import Entity
 import homeassistant.helpers.config_validation as cv
 
-VERSION = '0.0.1'
+VERSION = '0.0.2'
 
 _LOGGER = logging.getLogger(__name__)
 
@@ -162,7 +162,7 @@ class GoogleGeocode(Entity):
             self._set_state(DEFAULT_STATE)
             self._reset_attributes()
             pass
-        if entity_latlong == self._latlong:
+        elif entity_latlong == self._latlong:
             _LOGGER.debug("Location not changed...")
             pass
         else:

@@ -1,6 +1,6 @@
 {
     "sensor.google_geocode": {
-        "version": "0.0.1",
+        "version": "0.0.2",
         "local_location": "/custom_components/google_geocode/sensor.py",
         "remote_location": "https://raw.githubusercontent.com/fsteccanella/GoogleGeocode-HASS/dev/google_geocode/sensor.py",
         "visit_repo": "https://github.com/fsteccanella/GoogleGeocode-HASS",
